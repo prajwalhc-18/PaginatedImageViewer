@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import ImageCard from './components/ImageCard';
-import './App.css'; // Import CSS file for styling
+import './App.css';
 
 const App: React.FC = () => {
   const [images, setImages] = useState<any[]>([]);
@@ -17,8 +17,7 @@ const App: React.FC = () => {
           throw new Error('Failed to fetch images');
         }
         const data = await response.json();
-        setImages((prevImages) => [...prevImages, ...data]); // Append new images to the existing ones
-        // Assuming the API returns total number of pages in the response headers
+        setImages((prevImages) => [...prevImages, ...data]);
         const totalPages = Number(response.headers.get('X-Total-Pages'));
         setTotalPages(totalPages || 1);
       } catch (error) {
@@ -34,19 +33,25 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="app">
-      <header>
-        <img src="logo.png" alt="Logo" />
-        <h1>Paginated Image Viewer</h1>
+    <div className="app container">
+      <header className="row align-items-center">
+        <div className="col">
+          <img src="logo.png" alt="Logo" className="img-fluid" />
+        </div>
+        <div className="col">
+          <h1 className="text-center">Image Gallery</h1>
+        </div>
       </header>
-      <div className="image-gallery">
+      <div className="image-gallery row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {images.map((image) => (
-          <ImageCard key={image.id} imageUrl={image.download_url} author={image.author} />
+          <div key={image.id} className="col">
+            <ImageCard imageUrl={image.download_url} author={image.author} />
+          </div>
         ))}
       </div>
-      {currentPage < totalPages && ( // Render "Load More" button if there are more pages
-        <div className="load-more">
-          <button onClick={handleLoadMore}>Load More</button>
+      {currentPage < totalPages && (
+        <div className="load-more d-flex justify-content-center">
+          <button className="btn btn-primary" onClick={handleLoadMore}>Load More</button>
         </div>
       )}
     </div>
