@@ -1,30 +1,62 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Paginated Image Viewer
 
-Currently, two official plugins are available:
+This project is a web application that displays images fetched from an external API in a paginated format. It allows users to view a collection of images and navigate through multiple pages of images using pagination controls.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Displays images fetched from the provided API endpoint.
+- Supports pagination with options for Infinite Scroll, Load More, or Previous/Next buttons.
+- Fully responsive design ensures optimal viewing experience on both desktop and mobile devices.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- ReactJS: JavaScript library for building user interfaces.
+- CSS: Styling language for designing the layout and appearance of the application.
+- Bootstrap: CSS framework for building responsive and mobile-first websites.
+- Vite: Fast build tool for modern web development.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To run this project locally, follow these steps:
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/prajwalhc-18/PaginatedImageViewer.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd PaginatedImageViewer
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your web browser and navigate to `http://localhost:3000` to view the application.
+
+## Usage
+
+- Upon loading the application, you will see a grid of images fetched from the provided API.
+- Use the pagination controls to navigate through multiple pages of images.
+- Select your preferred pagination method (Infinite Scroll, Load More, or Previous/Next) to load additional images.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
+
+1. Fork the repository and create your branch from `main`.
+2. Make your changes and ensure the code is properly formatted.
+3. Test your changes thoroughly.
+4. Create a pull request with a detailed description of your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
