@@ -28,9 +28,9 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 100vw; /* Ensure the page uses complete width */
+  min-width: 100vw; 
   min-height: 100vh;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-x: hidden; 
 }
 
 h1 {

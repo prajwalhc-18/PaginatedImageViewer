@@ -26,6 +26,7 @@ body {
 .title h1 {
   font-size: 24px;
   font-weight: bold;
+  color: black;
 }
 
 .image-gallery {
@@ -47,40 +48,41 @@ body {
 }
 
 .grid-item:nth-child(1) {
-  grid-area: 1 / 1 / 7 / 8; /* Spanning rows 1 to 6 and columns 1 to 7 */
+  grid-area: 1 / 1 / 7 / 8; 
 }
 
 .grid-item:nth-child(2) {
-  grid-area: 1 / 8 / 4 / 11; /* Spanning rows 1 to 3 and columns 8 to 10 */
+  grid-area: 1 / 8 / 4 / 11; 
 }
 
 .grid-item:nth-child(3) {
-  grid-area: 4 / 8 / 7 / 11; /* Spanning rows 4 to 6 and column 8 to 10 */
+  grid-area: 4 / 8 / 7 / 11; 
 }
 
 .grid-item:nth-child(4) {
-  grid-area: 7 / 1 / 11 / 6; /* Spanning rows 7 to 10 and columns 1 to 5 */
+  grid-area: 7 / 1 / 11 / 6; 
 }
 
 .grid-item:nth-child(5) {
-  grid-area: 7 / 6 / 11 / 11; /* Spanning rows 7 to 10 and columns 6 to 10 */
+  grid-area: 7 / 6 / 11 / 11; 
 }
 
-.load-more {
-  text-align: center;
-  margin-top: 20px;
+.image-card:nth-child(n + 6) {
+  grid-column: span 2; /* Each image takes up 2 grid columns */
 }
 
-.load-more button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Additional styles */
+.author {
+  padding: 15px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  border-radius: 0 0 10px 10px;
+  color: #000; 
 }
 
-.load-more button:hover {
-  background-color: #0056b3;
+/* Mobile Layout */
+@media (max-width: 767px) {
+  .image-gallery {
+    display: block; 
+  }
 }

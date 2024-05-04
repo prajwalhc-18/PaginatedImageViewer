@@ -1,7 +1,7 @@
 // components/ImageCard.tsx
 
 import React from "react";
-import "./ImageCard.css"; // Import the CSS file
+import "./ImageCard.css"; 
 
 interface ImageCardProps {
   imageUrl: string;
