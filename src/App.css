@@ -11,14 +11,14 @@ body {
 
 .app {
   flex: 1; /* Allow the app container to grow to fill the remaining space */
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
 
 header {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -29,7 +29,8 @@ header img {
 
 header h1 {
   font-size: 24px;
-  color: #333;
+  font-weight: bolder;
+  color: #040404;
 }
 
 .image-gallery {

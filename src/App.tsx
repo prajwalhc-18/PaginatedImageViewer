@@ -1,5 +1,3 @@
-// App.tsx
-
 import React, { useState, useEffect } from 'react';
 import ImageCard from './components/ImageCard';
 import './App.css';
@@ -34,11 +32,11 @@ const App: React.FC = () => {
 
   return (
     <div className="app container">
-      <header className="row align-items-center">
-        <div className="col">
-          <img src="src\assets\gallery-svgrepo-com (2).svg" alt="Logo" className="img-fluid" />
+      <header className="header">
+        <div className="logo">
+          <img src="src\assets\gallery-svgrepo-com-5.svg" alt="Logo" className="img-fluid" />
         </div>
-        <div className="col">
+        <div className="title">
           <h1 className="text-center">Paginated Image Viewer</h1>
         </div>
       </header>
