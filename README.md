@@ -1,62 +1,60 @@
+**Project Title**: Image Gallery Application
 
-# Paginated Image Viewer
+**Description**:
 
-This project is a web application that displays images fetched from an external API in a paginated format. It allows users to view a collection of images and navigate through multiple pages of images using pagination controls.
+The Image Gallery Application is a web-based platform designed to display a collection of images fetched from the Picsum Photos API. It allows users to browse through a curated selection of images in a visually appealing manner. The application provides a seamless user experience with responsive design for both desktop and mobile devices.
 
-## Features
+**Features**:
 
-- Displays images fetched from the provided API endpoint.
-- Supports pagination with options for Infinite Scroll, Load More, or Previous/Next buttons.
-- Fully responsive design ensures optimal viewing experience on both desktop and mobile devices.
+1. **Image Display**: The application fetches images from the Picsum Photos API and displays them in a grid layout.
 
-## Technologies Used
+2. **Pagination**: Users can load more images by clicking on the "Load More" button, which fetches additional images from the API.
 
-- ReactJS: JavaScript library for building user interfaces.
-- CSS: Styling language for designing the layout and appearance of the application.
-- Bootstrap: CSS framework for building responsive and mobile-first websites.
-- Vite: Fast build tool for modern web development.
+3. **Responsive Design**: The layout adjusts dynamically to different screen sizes, providing an optimal viewing experience on various devices.
 
-## Installation
+**Technologies Used**:
 
-To run this project locally, follow these steps:
+- **Frontend**: React.js, CSS
+- **API Integration**: Fetch API for fetching images from the Picsum Photos API
 
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/prajwalhc-18/PaginatedImageViewer.git
+**Installation**:
+
+1. Clone the repository:
+   ```
+   git clone <repository_url>
    ```
 
 2. Navigate to the project directory:
-   ```bash
-   cd PaginatedImageViewer
+   ```
+   cd image-gallery-application
    ```
 
 3. Install dependencies:
-   ```bash
+   ```
    npm install
    ```
 
 4. Start the development server:
-   ```bash
-   npm run dev
+   ```
+   npm start
    ```
 
-5. Open your web browser and navigate to `http://localhost:3000` to view the application.
+5. Open the application in your browser at `http://localhost:5173`.
 
-## Usage
+**Usage**:
 
-- Upon loading the application, you will see a grid of images fetched from the provided API.
-- Use the pagination controls to navigate through multiple pages of images.
-- Select your preferred pagination method (Infinite Scroll, Load More, or Previous/Next) to load additional images.
+- Upon opening the application, users will see a grid layout of images fetched from the Picsum Photos API.
+- Users can click on the "Load More" button to fetch additional images.
+- The layout adjusts responsively to different screen sizes, providing an optimal viewing experience.
 
-## Contributing
+**Contributing**:
 
-Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-1. Fork the repository and create your branch from `main`.
-2. Make your changes and ensure the code is properly formatted.
-3. Test your changes thoroughly.
-4. Create a pull request with a detailed description of your changes.
+**License**:
 
-## License
+This project is licensed under the [MIT License](LICENSE).
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+**Acknowledgements**:
+
+- Special thanks to [Picsum Photos](https://picsum.photos/) for providing the API used in this project.
