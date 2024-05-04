@@ -36,10 +36,10 @@ const App: React.FC = () => {
     <div className="app container">
       <header className="row align-items-center">
         <div className="col">
-          <img src="logo.png" alt="Logo" className="img-fluid" />
+          <img src="src\assets\gallery-svgrepo-com (2).svg" alt="Logo" className="img-fluid" />
         </div>
         <div className="col">
-          <h1 className="text-center">Image Gallery</h1>
+          <h1 className="text-center">Paginated Image Viewer</h1>
         </div>
       </header>
       <div className="image-gallery row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
