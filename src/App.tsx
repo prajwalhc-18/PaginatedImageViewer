@@ -1,5 +1,3 @@
-// App.tsx
-
 import React, { useState, useEffect } from 'react';
 import ImageCard from './components/ImageCard';
 import './App.css';
@@ -42,9 +40,9 @@ const App: React.FC = () => {
           <h1 className="text-center">Paginated Image Viewer</h1>
         </div>
       </header>
-      <div className="image-gallery row row-cols-1 row-cols-md-2 g-4">
+      <div className="image-gallery row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {images.map((image) => (
-          <div key={image.id} className="col-lg-6 mb-3">
+          <div key={image.id} className="col">
             <ImageCard imageUrl={image.download_url} author={image.author} />
           </div>
         ))}
