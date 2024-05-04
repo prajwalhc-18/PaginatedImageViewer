@@ -1,3 +1,5 @@
+// App.tsx
+
 import React, { useState, useEffect } from 'react';
 import ImageCard from './components/ImageCard';
 import './App.css';
@@ -34,15 +36,15 @@ const App: React.FC = () => {
     <div className="app container">
       <header className="header">
         <div className="logo">
-          <img src="src\assets\gallery-svgrepo-com-5.svg" alt="Logo" className="img-fluid" />
+          <img src="src\assets\gallery-svgrepo-com (2).svg" alt="Logo" className="img-fluid" />
         </div>
         <div className="title">
           <h1 className="text-center">Paginated Image Viewer</h1>
         </div>
       </header>
-      <div className="image-gallery row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div className="image-gallery row row-cols-1 row-cols-md-2 g-4">
         {images.map((image) => (
-          <div key={image.id} className="col">
+          <div key={image.id} className="col-lg-6 mb-3">
             <ImageCard imageUrl={image.download_url} author={image.author} />
           </div>
         ))}
