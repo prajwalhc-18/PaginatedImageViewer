@@ -1,5 +1,7 @@
 # PaginatedImageViewer
 
+Live Site : https://paginatedimageviewer-2024e.netlify.app/
+
 **Description**:
 
 PaginatedImageViewer is a web-based application designed to showcase a collection of images fetched from the Picsum Photos API. It offers users the ability to browse through a curated selection of images in an aesthetically pleasing manner. The application boasts a seamless user experience with responsive design catering to both desktop and mobile devices.
